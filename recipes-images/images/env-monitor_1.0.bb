@@ -2,7 +2,7 @@ SUMMARY = "A console development image for env-monitor project"
 
 IMAGE_NAME = "env-monitor-${MACHINE}"
 
-require images/basic-dev-image.bb
+require images/basic-image.bb
 
 BASE_PACKAGES = " \
     sudo \
@@ -15,7 +15,7 @@ BASE_PACKAGES = " \
 "
 
 WIFI = " \
-    bbw-wireless \
+    bbbw-wireless \
     iw \
     linux-firmware-wl12xx \
     linux-firmware-wl18xx \
