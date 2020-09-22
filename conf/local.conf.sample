@@ -41,13 +41,13 @@ SDKMACHINE = "x86_64"
 # for empty root password
 # EXTRA_IMAGE_FEATURES = "debug-tweaks"
 
-# to enable a root password of jumpnowtek
+# to enable a root password of black
 INHERIT += "extrausers"
-EXTRA_USERS_PARAMS = "usermod -P jumpnowtek root; "
+EXTRA_USERS_PARAMS = "usermod -P black root; "
 
 # to force a password change on first login
-INHERIT += "chageusers"
-CHAGE_USERS_PARAMS = "chage -d0 root; "
+#INHERIT += "chageusers"
+#CHAGE_USERS_PARAMS = "chage -d0 root; "
 
 USER_CLASSES = "image-mklibs image-prelink"
 
